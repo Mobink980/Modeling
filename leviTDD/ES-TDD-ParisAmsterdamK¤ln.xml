@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Model>
+<station name="Cologne" posX="576.0" posY="118.0"/>
+<station name="Aachen" posX="490.0" posY="220.0"/>
+<station name="Brussels" posX="190.0" posY="220.0"/>
+<station name="Amsterdam" posX="190.0" posY="60.0"/>
+<station name="Paris" posX="60.0" posY="360.0"/>
+<gleis anzahl="1" nach="2" von="3"/>
+<gleis anzahl="2" nach="1" von="2"/>
+<gleis anzahl="1" nach="0" von="1"/>
+<gleis anzahl="1" nach="2" von="4"/>
+<fahrplan farbe="java.awt.Color[r=0,g=0,b=255]" name="Linie Koeln">
+<fixpunkt ort="0" zeit="0"/>
+<fixpunkt ort="1" zeit="10"/>
+<fixpunkt ort="1" zeit="15"/>
+<fixpunkt ort="2" zeit="35"/>
+<fixpunkt ort="2" zeit="40"/>
+<fixpunkt ort="4" zeit="50"/>
+<fixpunkt ort="4" zeit="60"/>
+<fixpunkt ort="2" zeit="70"/>
+<fixpunkt ort="2" zeit="75"/>
+<fixpunkt ort="1" zeit="95"/>
+<fixpunkt ort="1" zeit="100"/>
+<fixpunkt ort="0" zeit="110"/>
+</fahrplan>
+<fahrplan farbe="java.awt.Color[r=255,g=0,b=0]" name="Linie Paris">
+<fixpunkt ort="4" zeit="0"/>
+<fixpunkt ort="2" zeit="10"/>
+<fixpunkt ort="2" zeit="15"/>
+<fixpunkt ort="1" zeit="35"/>
+<fixpunkt ort="1" zeit="40"/>
+<fixpunkt ort="0" zeit="50"/>
+<fixpunkt ort="0" zeit="60"/>
+<fixpunkt ort="1" zeit="70"/>
+<fixpunkt ort="1" zeit="75"/>
+<fixpunkt ort="2" zeit="95"/>
+<fixpunkt ort="2" zeit="100"/>
+<fixpunkt ort="4" zeit="110"/>
+</fahrplan>
+<fahrplan farbe="java.awt.Color[r=0,g=255,b=0]" name="Linie Amsterdam">
+<fixpunkt ort="3" zeit="0"/>
+<fixpunkt ort="2" zeit="35"/>
+<fixpunkt ort="2" zeit="45"/>
+<fixpunkt ort="4" zeit="55"/>
+<fixpunkt ort="4" zeit="65"/>
+<fixpunkt ort="2" zeit="75"/>
+<fixpunkt ort="2" zeit="80"/>
+<fixpunkt ort="3" zeit="110"/>
+</fahrplan>
+<zeiten endzeit="110" startzeit="0" stepzeit="5" uhrzeit="false"/>
+</Model>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Model>
+<Type>TDD</Type>
+<Screen>
+<ScreenWidth>1920</ScreenWidth>
+<ScreenHeight>1080</ScreenHeight>
+</Screen>
+<station name="Station 1" posX="345.0" posY="133.0"/>
+<station name="Station 2" posX="714.0" posY="127.0"/>
+<station name="Station 3" posX="517.0" posY="317.0"/>
+<gleis anzahl="2" nach="0" von="1"/>
+<gleis anzahl="1" nach="2" von="1"/>
+<gleis anzahl="1" nach="2" von="0"/>
+<fahrplan farbe="java.awt.Color[r=51,g=51,b=255]" name="Train1">
+<fixpunkt ort="1" zeit="5"/>
+<fixpunkt ort="0" zeit="15"/>
+</fahrplan>
+<fahrplan farbe="java.awt.Color[r=255,g=0,b=0]" name="Train1">
+<fixpunkt ort="0" zeit="20"/>
+<fixpunkt ort="1" zeit="30"/>
+</fahrplan>
+<fahrplan farbe="java.awt.Color[r=0,g=102,b=102]" name="Train1">
+<fixpunkt ort="0" zeit="15"/>
+<fixpunkt ort="2" zeit="20"/>
+</fahrplan>
+<fahrplan farbe="java.awt.Color[r=51,g=255,b=51]" name="Train1">
+<fixpunkt ort="2" zeit="10"/>
+<fixpunkt ort="1" zeit="25"/>
+</fahrplan>
+<zeiten endzeit="30" startzeit="0" stepzeit="5" uhrzeit="false"/>
+</Model>

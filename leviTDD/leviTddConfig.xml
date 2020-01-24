@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0" class="java.beans.XMLDecoder"> 
+ <object class="java.util.Hashtable"> 
+  <void method="put"> 
+   <string>component</string> 
+   <string>TimeDistanceDiagrams</string> 
+  </void> 
+ </object> 
+ <object class="java.util.Hashtable"> 
+  <void method="put"> 
+   <string>ColorComponentBackground</string> 
+   <object class="java.awt.Color"> 
+    <int>255</int> 
+    <int>255</int> 
+    <int>255</int> 
+    <int>255</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>Language</string> 
+   <string>en</string> 
+  </void> 
+  <void method="put"> 
+   <string>BasisHTMLAvatar</string> 
+   <string>/resources/timeDistanceDiagrams/html/</string> 
+  </void> 
+  <void method="put"> 
+   <string>ColorButtonBackground</string> 
+   <object class="java.awt.Color"> 
+    <int>240</int> 
+    <int>240</int> 
+    <int>240</int> 
+    <int>255</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>FontHeader</string> 
+   <object class="java.awt.Font"> 
+    <string>SansSerif</string> 
+    <int>1</int> 
+    <int>14</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>FontText</string> 
+   <object class="java.awt.Font"> 
+    <string>SansSerif</string> 
+    <int>0</int> 
+    <int>12</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>SleepFactor</string> 
+   <int>2</int> 
+  </void> 
+  <void method="put"> 
+   <string>ColorComponentForeground</string> 
+   <object class="java.awt.Color"> 
+    <int>0</int> 
+    <int>0</int> 
+    <int>0</int> 
+    <int>255</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>ColorComponentHighlight</string> 
+   <object class="java.awt.Color"> 
+    <int>255</int> 
+    <int>0</int> 
+    <int>0</int> 
+    <int>255</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>Avatar</string> 
+   <boolean>true</boolean> 
+  </void> 
+  <void method="put"> 
+   <string>FontMenu</string> 
+   <object class="java.awt.Font"> 
+    <string>SansSerif</string> 
+    <int>1</int> 
+    <int>12</int> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>DefaultModel</string> 
+   <string>examples\ES-TDD-ParisAmsterdamKöln.xml</string> 
+  </void> 
+ </object> 
+</java> 

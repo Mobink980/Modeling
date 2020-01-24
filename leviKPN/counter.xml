@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Model>
+<Type>PN</Type>
+<Screen>
+<ScreenWidth>1920</ScreenWidth>
+<ScreenHeight>1080</ScreenHeight>
+</Screen>
+<Objects>
+<Buffer>
+<Buffername>T2</Buffername>
+<ID>57</ID>
+<Size>5</Size>
+<LeftX>911</LeftX>
+<TopY>427</TopY>
+<Width>80</Width>
+<RowHeight>15</RowHeight>
+<Orientation>0</Orientation>
+</Buffer>
+<Buffer>
+<Buffername>X</Buffername>
+<ID>51</ID>
+<Size>5</Size>
+<LeftX>420</LeftX>
+<TopY>278</TopY>
+<Width>80</Width>
+<RowHeight>15</RowHeight>
+<Orientation>1</Orientation>
+</Buffer>
+<Buffer>
+<Buffername>Z</Buffername>
+<ID>54</ID>
+<Size>5</Size>
+<LeftX>915</LeftX>
+<TopY>74</TopY>
+<Width>80</Width>
+<RowHeight>15</RowHeight>
+<Orientation>0</Orientation>
+</Buffer>
+<Process>
+<Processname>H1</Processname>
+<ID>41</ID>
+<LeftX>903</LeftX>
+<TopY>226</TopY>
+<Width>100</Width>
+<Height>100</Height>
+<inBuffer>
+<ID>57</ID>
+<Port>1</Port>
+</inBuffer>
+<outBuffer>
+<ID>54</ID>
+<Port>0</Port>
+</outBuffer>
+<Substep>
+<Expression>send 1 to Z</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>i = wait T2</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>i = i + 1</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>send i to Z</Expression>
+<Time>1</Time>
+</Substep>
+<cntInitSubsteps>1</cntInitSubsteps>
+<cntLoopSubsteps>3</cntLoopSubsteps>
+</Process>
+<Process>
+<Processname>F</Processname>
+<ID>46</ID>
+<LeftX>410</LeftX>
+<TopY>91</TopY>
+<Width>100</Width>
+<Height>100</Height>
+<inBuffer>
+<ID>54</ID>
+<Port>0</Port>
+</inBuffer>
+<outBuffer>
+<ID>51</ID>
+<Port>1</Port>
+</outBuffer>
+<Substep>
+<Expression>b = true</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>i = wait Z</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>i = i + 1</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>send i to X</Expression>
+<Time>1</Time>
+</Substep>
+<cntInitSubsteps>1</cntInitSubsteps>
+<cntLoopSubsteps>3</cntLoopSubsteps>
+</Process>
+<Process>
+<Processname>G</Processname>
+<ID>36</ID>
+<LeftX>410</LeftX>
+<TopY>412</TopY>
+<Width>100</Width>
+<Height>100</Height>
+<inBuffer>
+<ID>51</ID>
+<Port>0</Port>
+</inBuffer>
+<outBuffer>
+<ID>57</ID>
+<Port>1</Port>
+</outBuffer>
+<Substep>
+<Expression>b = true</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>i = wait X</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>i = i + 1</Expression>
+<Time>1</Time>
+</Substep>
+<Substep>
+<Expression>send i to T2</Expression>
+<Time>1</Time>
+</Substep>
+<cntInitSubsteps>1</cntInitSubsteps>
+<cntLoopSubsteps>3</cntLoopSubsteps>
+</Process>
+</Objects>
+</Model>
